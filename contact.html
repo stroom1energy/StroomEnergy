@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТРУМ ЕНЕРДЖІ - Контакти</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2>СТРУМ ЕНЕРДЖІ</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="documents.html">Нормативні документи</a></li>
+                    <li><a href="contact.html" class="active">Контакти</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакти</h1>
+            <p>Зв'яжіться з нами для отримання додаткової інформації</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контактна інформація</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Наша адреса</h4>
+                            <p>01033, Україна, місто Київ, вулиця Саксаганського, будинок, 36 ЛІТ.Д</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Години роботи</h4>
+                            <p>Понеділок-П'ятниця з 09.00 до 18.00</p>
+                            <p>Вихідні дні: субота та неділя</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Відповідальна особа</h4>
+                            <p>Директор: Кащенко Віталій Вікторович</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Юридична інформація</h4>
+                            <p>Код ЄДРПОУ: 45946104</p>
+                            <p>Код діяльності: 35.14</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Форма зворотного зв'язку</h3>
+                    <p>Заповніть форму нижче, і ми зв'яжемося з вами найближчим часом</p>
+                    
+                    <form action="https://formspree.io/f/mzzvjvlg" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                Ваше ім'я *
+                                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                Email адреса *
+                                <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                Номер телефону
+                                <input type="tel" id="phone" name="phone" placeholder="Введіть ваш номер телефону">
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">
+                                Назва компанії
+                                <input type="text" id="company" name="company" placeholder="Введіть назву компанії">
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                Тема звернення
+                                <select id="subject" name="subject">
+                                    <option value="">Оберіть тему</option>
+                                    <option value="consultation">Консультація</option>
+                                    <option value="cooperation">Співпраця</option>
+                                    <option value="pricing">Питання щодо цін</option>
+                                    <option value="technical">Технічні питання</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                Повідомлення *
+                                <textarea id="message" name="message" placeholder="Опишіть ваше звернення" rows="5" required></textarea>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Я погоджуюся з обробкою персональних даних *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Надіслати повідомлення
+                        </button>
+                        
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Як нас знайти</h2>
+                <p>Наше офіс розташований у центрі Києва</p>
+            </div>
+            <div class="map-info">
+                <div class="map-details">
+                    <h3>Схема проїзду</h3>
+                    <p><strong>Адреса:</strong> 01033, Україна, місто Київ, вулиця Саксаганського, будинок, 36 ЛІТ.Д</p>
+                    <p><strong>Найближчі станції метро:</strong></p>
+                    <ul>
+                        <li>Станція метро "Золоті ворота" - 5 хвилин пішки</li>
+                        <li>Станція метро "Театральна" - 7 хвилин пішки</li>
+                    </ul>
+                    <p><strong>Автобуси:</strong> №24, №114</p>
+                    <p><strong>Тролейбуси:</strong> №6, №16, №18</p>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-frame">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2540.758453307348!2d30.493001005532786!3d50.44559969084092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LLRg9C70LjRhtGPINCh0LDQutGB0LDQs9Cw0L3RgdGM0LrQvtCz0L4sINCx0YPQtNC40L3QvtC6LCAzNiA!5e0!3m2!1sru!2sua!4v1754402701394!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>СТРУМ ЕНЕРДЖІ</h3>
+                    <p>Трейдерська діяльність з електричною енергією</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="documents.html">Нормативні документи</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакти</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 01033, Київ, вул. Саксаганського, 36 ЛІТ.Д</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 09:00-18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ТОВ "СТРУМ ЕНЕРДЖІ". Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
